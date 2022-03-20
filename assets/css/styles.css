@@ -21,7 +21,7 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 50px 50px;
     background: #fff;
     border-radius: 10px;
 }
