@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --primary-color: rgb(22, 107, 103);
+    --secundary-color: rgb(7, 65, 62);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.cabecalho-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cabecalho {
+    width: 100%;
+    padding: 20px;
+    background: #024059;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cabecalho h1 {
+    background: #024059;
+    text-align: center;
+    color: #FFF;
+    margin: 0;
+}
+
+.explicacao {
+    padding: 10px;
+}
+
+.explicacao h3 {
+    margin: 10px 0;
+}
+
+.explicacao p {
+    margin-bottom: 20px;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.table-content-getter .table-cabecalho td {
+    height: 25px;
+    width: 30px;
+    padding: 2px;
+}
+
+.table-content-getter td {
+    height: 45px;
+    width: 33.33%;
+}
+
+tbody .input {
+    height: 30px;
+    padding: 3px;
+    width: 50%;
+    border: none;
+}
+
+tfoot button {
+    height: 30px;
+    padding: 3px;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: #024059;
+}
+
+tfoot button:hover {
+    color: #024059;
+    background: white;
+}
+
+thead {
+    background: #84dfc5fa;
+}
+
+tbody {
+    background: #6fe1ee;
+}
+
+tfoot {
+    background: #84dfc5fa;
+}
+
+.table-content-setter {
+    height: 100px;
+    margin-left: 30px;
+}
+
+.table-content-setter .table-cabecalho td {
+    height: 25px;
+    width: 30px;
+    padding: 2px;
+}
+
+.table-content-setter td {
+    height: 20px;
+    width: 33.33%;
+}
+
+table {
+    text-align: center;
+
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background-color: #024059;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer span {
+    color: crimson;
+}
+
+@media (max-width: 700px) {
+    .table-container {
+        grid-template-columns: 1fr;
+    }
+
+    .table-content-setter {
+        margin: 0 auto;
+        padding-top: 30px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <section class="container">
+        <div class="cabecalho-content">
+            <header class="cabecalho">
+                <h1>Calcular Coeficiente de Rendimento - CR</h1>
+            </header>
+        </div>
+
+        <article class="explicacao">
+            <h3>O que é Coeficiente de Rendimento?</h3>
+            <p>É a média ponderada das notas de suas disciplinas durante o período letivo. Normalmente, o critério 'peso' é definido utilizando a carga horária.</p>
+            <p>Este coeficiente expressa a nota média que o aluno tira em uma prova. Por exemplo: Se o seu CR é 8.5, significa que, em média, a cada prova realizada, sua nota é 8.5. Este coeficiente é medido através da seguinte fórmula:</p>
+
+        <div class="div-img"><img class="img" src="./assets/img/CR.png" alt=""></div>
+        </article>
+
+        <main class="table-container">
+            <table class="table-content-getter">
+                <thead class="table-cabecalho">
+                    <tr>
+                        <td>Nota</td>
+                        <td>Crédito Disciplina (CD)</td>
+                        <td>CD * N</td>
+                    </tr>
+                </thead>
+
+                <tbody class="table-body">
+                    <tr class="linha">
+                        <td><input class="input-nota input input" type="number"></td>
+                        <td><input class="input-credito-disciplina input" type="number"></td>
+                        <td class="celula-resultado-produto">0</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td><button class="adicionar">Adicionar</button></td>
+                        <td><button class="remover">Remover</button></td>
+                        <td><button class="calcular">Calcular</button></td>
+                        <td class="preencher"></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <table class="table-content-setter">
+                <thead class="table-cabecalho">
+                    <tr>
+                        <td>Total de Crédito de Disciplina</td>
+                        <td>Total de CD*N</td>
+                        <td>CR</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="valor tcd-result">0</td>
+                        <td class="valor cdn-result">0</td>
+                        <td class="cr-result">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <small><a href="#">Site criado com <span>❤</span> por Gabriel Nolasco</a></small>
+            <small>&copy Todos os direitos protegidos.</small>
+        </footer>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
