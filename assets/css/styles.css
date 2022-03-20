@@ -21,7 +21,7 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 50px 15px;
+    margin: 50px auto;
     background: #fff;
     border-radius: 10px;
 }
@@ -174,5 +174,9 @@ footer span {
     
     tfoot button {
         width: 80%;
+    }
+    
+    .container {
+        margin: 15px 15px;
     }
 }
