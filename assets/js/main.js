@@ -44,7 +44,7 @@ function CR () {
     const creditoDisciplina = totalCreditoDisciplina();
     const CreditoDisciplinaVezesNota = totalCreditoDisciplinaVezesNota();
     const cr = CreditoDisciplinaVezesNota / creditoDisciplina;
-    if (typeof(cr) !== Number) crResult.innerText = 'Insira um valor.'
+    if (typeof(cr) !== 'number') crResult.innerText = 'Insira um valor.'
     crResult.innerHTML = cr.toFixed(2);
 }
 
