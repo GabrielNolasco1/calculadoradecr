@@ -12,7 +12,7 @@ function resultadoProduto () {
         let inputCreditoDisciplina = valor.querySelector('.input-credito-disciplina')
         let colunaResultado = valor.querySelector('.celula-resultado-produto')
         resultado = inputNota.value * inputCreditoDisciplina.value;
-        colunaResultado.innerHTML = resultado
+        colunaResultado.innerHTML = resultado.toFixed(2);
     }
 }
 
